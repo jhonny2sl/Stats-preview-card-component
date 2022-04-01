@@ -80,19 +80,20 @@ p {
         flex-direction: row-reverse;
     }
 
+    .card, .image-accent, .stat-container {
+        height: 27.875rem;
+    }
+
     .image-accent {
         /* position: absolute; */
         left: 35.625rem;
         z-index: 2;
     }
-    
-    .image-accent, .stat-container {
-        height: 27.875rem;
-    }
 
     .image-accent, img {
         border-radius: 0 0.625em 0.625em 0;
     }
+    
     .image-accent {
         width: 33.75rem;
     }
@@ -103,7 +104,7 @@ p {
         left: 4.5rem;
         z-index: 1;
         width: auto;
-        height: auto;
+        height: inherit;
     }
 
     h1, h2, p {
