@@ -97,13 +97,16 @@ p {
         height: 27.875rem;
     }
 
-    .image-accent {
+    .image-accent, img {
         border-radius: 0 0.625em 0.625em 0;
+    }
+
+    .image-accent {
         width: 33.75rem;
     }
 
     img {
-        max-width: auto;
+        width: auto;
         height: auto;
     }
 
