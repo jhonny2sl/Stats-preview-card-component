@@ -93,22 +93,19 @@ p {
         z-index: 1;
     }
     
-    .image-accent, .stat-container {
+    .image-accent, img, .stat-container {
         height: 27.875rem;
     }
 
     .image-accent, img {
         border-radius: 0 0.625em 0.625em 0;
-    }
-
-    .image-accent {
         width: 33.75rem;
     }
 
-    img {
+    /* img {
         width: auto;
         height: auto;
-    }
+    } */
 
     h1, h2, p {
         text-align: left;
