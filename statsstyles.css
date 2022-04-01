@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: hsl(244, 38%, 16%);
+    border-radius: 0.625em;
+    width: 20.4375rem;
+    margin: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-accent {
+    background-color: hsl(277, 64%, 61%);
+    height: 15rem;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+.image-accent, img {
+    border-radius: 0.625em 0.625em 0 0;
+    width: inherit;
+}
+
+h1, h2, p {
+    text-align: center;
+    width: 16.0625rem;
+}
+
+h1 {
+    font-size: 1.855em;
+    margin: 2.1875rem auto 0.9375rem auto;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7rem;
+}
+
+.stats {
+    margin: 2.5rem 0 2.1875rem 0;
+}
+
+.stats div:not(:last-child) {
+    margin-bottom: 1.6875em;
+}
+
+.stats div p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8125em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 72.375rem) {
+    .card {
+        width: 69.375rem;
+        margin: 11.0625rem;
+        flex-direction: row-reverse;
+    }
+
+    .image-accent {
+        /* position: absolute; */
+        left: 35.625rem;
+        z-index: 2;
+    }
+
+    img {
+        content: url('./images/image-header-desktop.jpg');
+        position: relative;
+        left: 4.5rem;
+        z-index: 1;
+    }
+    .image-accent, .stat-container {
+        height: 27.875rem;
+    }
+
+    .image-accent, img {
+        border-radius: 0 0.625em 0.625em 0;
+    }
+
+    .image-accent {
+        width: 33.75rem;
+    } 
+    
+    img {
+        width: auto;
+    }
+
+    h1, h2, p {
+        text-align: left;
+    }
+
+    h1, p, .stats {
+        width: 26.625rem;
+    }
+
+    h1 {
+        font-size: 2.39em;
+        margin: 4.5rem 0 1.75rem 0;
+    }
+
+    p {
+        width: 23.5rem;
+        /* padding-right: 50px; */
+        height: 4.5rem;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        margin: 4.5rem 0 0 0;
+        /* margin-bottom: 59px; */
+    }
+
+    .stats div {
+        flex: 1 1 auto;
+    }
+
+    .stats div:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .stats div h2 {
+        display: inline;
+    }
+
+    .stats div p {
+        width: auto;
+        height: auto;
+    }
+}
