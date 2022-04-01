@@ -93,13 +93,18 @@ p {
         z-index: 1;
     }
     
-    .image-accent, img, .stat-container {
+    .image-accent, .stat-container {
         height: 27.875rem;
     }
 
-    .image-accent, img {
+    .image-accent {
         border-radius: 0 0.625em 0.625em 0;
         width: 33.75rem;
+    }
+
+    img {
+        max-width: auto;
+        height: auto;
     }
 
     h1, h2, p {
@@ -112,7 +117,7 @@ p {
 
     h1 {
         font-size: 2.39em;
-        margin: 4.5rem 0 1.75rem 0;
+        margin: 4.125rem 0 1.75rem 0;
     }
 
     p {
