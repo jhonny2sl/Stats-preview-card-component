@@ -85,27 +85,26 @@ p {
         left: 35.625rem;
         z-index: 2;
     }
+    
+    .image-accent, .stat-container {
+        height: 27.875rem;
+    }
+
+    .image-accent, img {
+        border-radius: 0 0.625em 0.625em 0;
+    }
+    .image-accent {
+        width: 33.75rem;
+    }
 
     img {
         content: url('./images/image-header-desktop.jpg');
         position: relative;
         left: 4.5rem;
         z-index: 1;
-    }
-    
-    .image-accent, img, .stat-container {
-        height: 27.875rem;
-    }
-
-    .image-accent, img {
-        border-radius: 0 0.625em 0.625em 0;
-        width: 33.75rem;
-    }
-
-    /* img {
         width: auto;
         height: auto;
-    } */
+    }
 
     h1, h2, p {
         text-align: left;
